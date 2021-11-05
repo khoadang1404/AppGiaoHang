@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 
 import com.example.view_appgiaohang.R;
 import com.example.view_appgiaohang.fragments.history_FragmentAdapter;
@@ -14,11 +17,30 @@ public class history_layout extends AppCompatActivity {
     TabLayout tabLayout;
     ViewPager2 pager2;
     history_FragmentAdapter adapter;
-
+    ImageButton home;
+    ImageButton account;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.history_layout);
+
+        home = (ImageButton) findViewById(R.id.home);
+        account = (ImageButton) findViewById(R.id.account);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(history_layout.this, home_form.class);
+                startActivity(intent);
+            }
+        });
+
+        account.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(history_layout.this, manage_account.class);
+                startActivity(intent);
+            }
+        });
 
         tabLayout = findViewById(R.id.tab_layout);
         pager2 = findViewById(R.id.view_pager2);
