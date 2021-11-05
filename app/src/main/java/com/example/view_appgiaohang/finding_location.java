@@ -1,21 +1,20 @@
 package com.example.view_appgiaohang;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class home_form extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class finding_location extends AppCompatActivity {
 
     ImageButton account;
     ImageButton list;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_form);
+        setContentView(R.layout.finding_location);
 
         account = (ImageButton) findViewById(R.id.account);
         list = (ImageButton) findViewById(R.id.list);
@@ -23,7 +22,7 @@ public class home_form extends AppCompatActivity {
         account.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(home_form.this, manage_account.class);
+                Intent intent = new Intent(finding_location.this, manage_account.class);
                 startActivity(intent);
             }
         });
@@ -31,9 +30,10 @@ public class home_form extends AppCompatActivity {
         list.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(home_form.this, history_layout.class);
+                Intent intent = new Intent(finding_location.this, history_layout.class);
                 startActivity(intent);
             }
         });
+
     }
 }

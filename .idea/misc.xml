@@ -6,6 +6,9 @@
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/drawable/finding_location.xml" value="0.2703125" />
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/drawable/finding_location_stroke_footer.xml" value="0.2703125" />
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/drawable/history_history.xml" value="0.2703125" />
+        <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/drawable/home_1.xml" value="0.2703125" />
+        <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/drawable/home_place.xml" value="0.2703125" />
+        <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/drawable/home_search.xml" value="0.2703125" />
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.2703125" />
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/drawable/ic_facebook_brands.xml" value="0.2703125" />
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/drawable/ic_google_brands.xml" value="0.2703125" />
@@ -40,7 +43,7 @@
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/drawable/navigation_bar_house_user.xml" value="0.2703125" />
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/drawable/navigation_bar_list.xml" value="0.2703125" />
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/drawable/navigation_bar_user.xml" value="0.2703125" />
-        <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/layout/activity_home_form.xml" value="0.15579710144927536" />
+        <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/layout/activity_home_form.xml" value="0.264" />
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/layout/activity_manage_account.xml" value="0.264" />
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/layout/activity_sign_in.xml" value="0.13677536231884058" />
