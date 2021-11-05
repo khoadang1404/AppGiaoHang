@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".history_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navigation_bar">
+
+        <TextView
+            android:id="@+id/header_location"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/my_acc_1"
+            android:backgroundTint="@color/orange_milk"
+            android:drawableLeft="@drawable/location_go_back"
+            android:drawablePadding="-60dp"
+            android:drawableTint="@color/white"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:text="Lịch sử"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="#FF7000"
+            android:background="@color/white"
+            app:tabTextColor="#FF7000"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:layout_below="@+id/header_location" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tab_layout"
+            android:background="@color/white" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/navigation_bar_demo">
+
+
+        <ImageButton
+            android:id="@+id/list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="7.5dp"
+            android:layout_marginTop="7.5dp"
+            android:layout_marginEnd="7.5dp"
+            android:layout_marginBottom="7.5dp"
+            android:adjustViewBounds="true"
+            android:background="#FFFFFF"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="7.5dp"
+            android:src="@drawable/navigation_bar_list" />
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/navigation_bar_house_user"
+            android:background="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="7.5dp"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:layout_margin="7.5dp"
+            />
+
+        <ImageButton
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#FFFFFF"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="7.5dp"
+            android:src="@drawable/navigation_bar_user"
+            app:tint="@color/orange_milk"
+            android:adjustViewBounds="true"
+            android:layout_margin="7.5dp"/>
+    </RelativeLayout>
+</RelativeLayout>

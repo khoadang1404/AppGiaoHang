@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manage_account">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/header_acc"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/my_acc_1"
+            android:backgroundTint="@color/orange_milk"
+            android:gravity="center"
+            android:text="Tài khoản"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/header_acc_1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/header_acc"
+            android:background="@color/black"
+            android:drawableLeft="@drawable/ic_user_regular_my_acc"
+            android:drawableRight="@drawable/my_acc_greater_than"
+            android:drawablePadding="15dp"
+            android:gravity="center|left"
+            android:paddingHorizontal="20dp"
+            android:text="Chào bạn, nhóm 2T2LK"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <ScrollView
+            android:id="@+id/user_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/navigation_bar"
+            android:layout_below="@+id/header_acc_1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/body_money_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/header_acc_1"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/my_acc_1"
+                    android:drawableLeft="@drawable/my_acc_money_check"
+                    android:drawableRight="@drawable/my_acc_grater_than_black"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:text="Thanh toán"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/body_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/body_money_check"
+                    android:layout_marginTop="-1dp"
+                    android:background="@drawable/my_acc_1"
+                    android:drawableLeft="@drawable/my_acc_history_solid"
+                    android:drawableRight="@drawable/my_acc_grater_than_black"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:text="Lịch sử"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/body_bill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/body_history"
+                    android:layout_marginTop="-1dp"
+                    android:background="@drawable/my_acc_1"
+                    android:drawableLeft="@drawable/my_acc_bill"
+                    android:drawableRight="@drawable/my_acc_grater_than_black"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:text="Hóa đơn"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/body_bounty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/body_bill"
+                    android:layout_marginTop="-1dp"
+                    android:background="@drawable/my_acc_1"
+                    android:drawableLeft="@drawable/my_acc_bounty"
+                    android:drawableRight="@drawable/my_acc_grater_than_black"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:text="Tiền thưởng"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/body_wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/body_bounty"
+                    android:layout_marginTop="-1dp"
+                    android:background="@drawable/my_acc_1"
+                    android:drawableLeft="@drawable/my_acc_wallet"
+                    android:drawableRight="@drawable/my_acc_grater_than_black"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:text="Ví Voucher"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/body_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/body_wallet"
+                    android:layout_marginTop="-1dp"
+                    android:background="@drawable/my_acc_1"
+                    android:drawableLeft="@drawable/my_acc_tablet"
+                    android:drawableRight="@drawable/my_acc_grater_than_black"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:text="Ứng dụng dành cho chủ quán"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/body_user_plus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/body_tablet"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/my_acc_1"
+                    android:drawableLeft="@drawable/my_acc_user_plus"
+                    android:drawableRight="@drawable/my_acc_grater_than_black"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:text="Mời bạn bè"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/body_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/body_user_plus"
+                    android:layout_marginTop="-1dp"
+                    android:background="@drawable/my_acc_1"
+                    android:drawableLeft="@drawable/my_acc_feedback"
+                    android:drawableRight="@drawable/my_acc_grater_than_black"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:text="Góp ý"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/body_policy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/body_feedback"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/my_acc_1"
+                    android:drawableLeft="@drawable/my_acc_policy"
+                    android:drawableRight="@drawable/my_acc_grater_than_black"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:text="Chính sách quy định"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/body_install"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/body_policy"
+                    android:layout_marginTop="-1dp"
+                    android:background="@drawable/my_acc_1"
+                    android:drawableLeft="@drawable/my_acc_install"
+                    android:drawableRight="@drawable/my_acc_grater_than_black"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:text="Cài đặt ứng dụng"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/body_sign_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/body_install"
+                    android:layout_marginTop="-1dp"
+                    android:background="@drawable/my_acc_1"
+                    android:drawableLeft="@drawable/my_acc_sign_out"
+                    android:drawableRight="@drawable/my_acc_grater_than_black"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:text="Đăng xuất"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/navigation_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/navigation_bar_demo">
+
+
+            <ImageButton
+                android:id="@+id/list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="7.5dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginEnd="7.5dp"
+                android:layout_marginBottom="7.5dp"
+                android:adjustViewBounds="true"
+                android:background="#FFFFFF"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="7.5dp"
+                android:src="@drawable/navigation_bar_list" />
+
+            <ImageButton
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/navigation_bar_house_user"
+                android:background="#FFFFFF"
+                android:layout_centerHorizontal="true"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="7.5dp"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:layout_margin="7.5dp"
+                />
+
+            <ImageButton
+                android:id="@+id/account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="#FFFFFF"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="7.5dp"
+                android:src="@drawable/navigation_bar_user"
+                app:tint="@color/orange_milk"
+                android:adjustViewBounds="true"
+                android:layout_margin="7.5dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

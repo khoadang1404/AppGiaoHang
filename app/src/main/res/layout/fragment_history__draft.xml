@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.history_DraftFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/history_history">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/milktea" />
+        <TextView
+            android:id="@+id/boba"
+            android:layout_toRightOf="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Trà đào x1"
+            android:textColor="@color/black"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/add"
+            android:layout_below="@+id/boba"
+            android:layout_toRightOf="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="150 Trần Cao Vân - ĐN"
+            android:textSize="16dp"/>
+        <TextView
+            android:id="@+id/price"
+            android:layout_toRightOf="@+id/image"
+            android:layout_below="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="35.000đ"
+            android:textSize="16dp"/>
+        <TextView
+            android:id="@+id/date"
+            android:layout_below="@+id/price"
+            android:layout_toRightOf="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="1/10/2021"
+            android:textColor="#1FA4C1"
+            android:textStyle="italic"/>
+    </RelativeLayout>
+
+</FrameLayout>

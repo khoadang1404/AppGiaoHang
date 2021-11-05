@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.history_HistoryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/history_history">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/milktea" />
+                <TextView
+                    android:id="@+id/boba1"
+                    android:layout_toRightOf="@+id/image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Trà sữa trân châu đường đen x1"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/add1"
+                    android:layout_below="@+id/boba1"
+                    android:layout_toRightOf="@+id/image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="30 Ông Ích Khiêm - ĐN"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/price1"
+                    android:layout_toRightOf="@+id/image1"
+                    android:layout_below="@+id/add1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="35.000đ"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/date1"
+                    android:layout_below="@+id/price1"
+                    android:layout_toRightOf="@+id/image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="10/10/2021"
+                    android:textColor="#1FA4C1"
+                    android:textStyle="italic"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/history_history">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/milktea" />
+                <TextView
+                    android:id="@+id/boba"
+                    android:layout_toRightOf="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Trà đào x1"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/add"
+                    android:layout_below="@+id/boba"
+                    android:layout_toRightOf="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="150 Trần Cao Vân - ĐN"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_toRightOf="@+id/image"
+                    android:layout_below="@+id/add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="35.000đ"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_below="@+id/price"
+                    android:layout_toRightOf="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="1/10/2021"
+                    android:textColor="#1FA4C1"
+                    android:textStyle="italic"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/history_history">
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/milktea" />
+
+                <TextView
+                    android:id="@+id/boba2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/image2"
+                    android:text="Trà Olong x1"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+                <TextView
+                    android:id="@+id/add2"
+                    android:layout_below="@+id/boba2"
+                    android:layout_toRightOf="@+id/image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="30 Ông Ích Khiêm - ĐN"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/price2"
+                    android:layout_toRightOf="@+id/image2"
+                    android:layout_below="@+id/add2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="35.000đ"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/date2"
+                    android:layout_below="@+id/price2"
+                    android:layout_toRightOf="@+id/image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="10/10/2021"
+                    android:textColor="#1FA4C1"
+                    android:textStyle="italic"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/history_history">
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/milktea" />
+
+                <TextView
+                    android:id="@+id/boba3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/image3"
+                    android:text="Hồng trà x2"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+                <TextView
+                    android:id="@+id/add3"
+                    android:layout_below="@+id/boba3"
+                    android:layout_toRightOf="@+id/image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="30 Ông Ích Khiêm - ĐN"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/price3"
+                    android:layout_toRightOf="@+id/image3"
+                    android:layout_below="@+id/add3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="35.000đ"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/date3"
+                    android:layout_below="@+id/price3"
+                    android:layout_toRightOf="@+id/image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="10/10/2021"
+                    android:textColor="#1FA4C1"
+                    android:textStyle="italic"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/history_history">
+
+                <ImageView
+                    android:id="@+id/image4"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/milktea" />
+
+                <TextView
+                    android:id="@+id/boba4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/image4"
+                    android:text="Hồng trà x4"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+                <TextView
+                    android:id="@+id/add4"
+                    android:layout_below="@+id/boba4"
+                    android:layout_toRightOf="@+id/image4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="30 Ông Ích Khiêm - ĐN"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/price4"
+                    android:layout_toRightOf="@+id/image4"
+                    android:layout_below="@+id/add4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="35.000đ"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/date4"
+                    android:layout_below="@+id/price4"
+                    android:layout_toRightOf="@+id/image4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="10/10/2021"
+                    android:textColor="#1FA4C1"
+                    android:textStyle="italic"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/history_history">
+
+                <ImageView
+                    android:id="@+id/image5"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/milktea" />
+                <TextView
+                    android:id="@+id/boba5"
+                    android:layout_toRightOf="@+id/image5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Trà sữa trân châu đường đen x1"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/add5"
+                    android:layout_below="@+id/boba5"
+                    android:layout_toRightOf="@+id/image5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="30 Ông Ích Khiêm - ĐN"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/price5"
+                    android:layout_toRightOf="@+id/image5"
+                    android:layout_below="@+id/add5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="35.000đ"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/date5"
+                    android:layout_below="@+id/price5"
+                    android:layout_toRightOf="@+id/image5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="10/10/2021"
+                    android:textColor="#1FA4C1"
+                    android:textStyle="italic"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/history_history">
+
+                <ImageView
+                    android:id="@+id/image6"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/milktea" />
+                <TextView
+                    android:id="@+id/boba6"
+                    android:layout_toRightOf="@+id/image6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Trà sữa trân châu đường đen x1"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/add6"
+                    android:layout_below="@+id/boba6"
+                    android:layout_toRightOf="@+id/image6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="30 Ông Ích Khiêm - ĐN"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/price6"
+                    android:layout_toRightOf="@+id/image6"
+                    android:layout_below="@+id/add6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="35.000đ"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/date6"
+                    android:layout_below="@+id/price6"
+                    android:layout_toRightOf="@+id/image6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="10/10/2021"
+                    android:textColor="#1FA4C1"
+                    android:textStyle="italic"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

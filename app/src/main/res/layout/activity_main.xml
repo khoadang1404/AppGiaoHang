@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/login_2" />
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentBottom="true"
+
+        android:background="@drawable/login_3" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="90dp"
+        android:background="@drawable/login_1">
+
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Đăng nhập"
+            android:textColor="@color/orange_milk"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtAcc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtLogin"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/login_4"
+            android:drawableLeft="@drawable/ic_user_regular"
+            android:drawablePadding="10dp"
+            android:hint="Tên đăng nhập"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="12dp" />
+
+        <EditText
+            android:id="@+id/txtPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtAcc"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_4"
+            android:drawableLeft="@drawable/ic_key_solid"
+            android:drawablePadding="10dp"
+            android:hint="Mật khẩu"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/orange_milk"
+            android:hint="Đăng nhập"
+            android:paddingHorizontal="35dp"
+            android:paddingVertical="8dp"
+            android:textColorHint="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:cornerRadius="30dp" />
+
+        <TextView
+            android:id="@+id/forgetPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnLogin"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/fgPass"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/or"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/forgetPass"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Hoặc"
+            android:textColor="@color/gray"
+            android:textSize="16dp"
+            android:textStyle="italic" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/or"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/green_1"
+            android:drawableLeft="@drawable/ic_mobile_alt_solid"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="left"
+            android:hint="Đăng nhập bằng số điện thoại"
+            android:paddingVertical="12dp"
+            android:textColorHint="@color/white"
+            android:textSize="14.6dp"
+            app:cornerRadius="30dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_gg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_phone"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/red_1"
+            android:drawableLeft="@drawable/ic_google_brands"
+            android:gravity="left"
+            android:hint="Đăng nhập bằng Google"
+            android:paddingVertical="12dp"
+            android:textColorHint="@color/white"
+            android:textSize="14.6dp"
+            app:cornerRadius="30dp"
+            android:fontFamily="sans-serif-medium"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_fb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_gg"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/blue_1"
+            android:drawableLeft="@drawable/ic_facebook_brands"
+            android:gravity="left"
+            android:hint="Đăng nhập bằng Facebook"
+            android:paddingVertical="12dp"
+            android:textColorHint="@color/white"
+            android:textSize="14.6dp"
+            app:cornerRadius="30dp"
+            android:fontFamily="sans-serif-medium"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

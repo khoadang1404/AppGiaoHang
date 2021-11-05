@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".fragments.ComingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/waiter" />
+
+        <TextView
+            android:id="@+id/content1"
+            android:layout_below="@+id/image"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quên chưa đặt món rồi nè bạn ơi!!"/>
+        <TextView
+            android:id="@+id/content2"
+            android:layout_below="@+id/content1"
+            android:text="Những đơn hàng đã được xác nhận,"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/content3"
+            android:layout_below="@+id/content2"
+            android:text="đang được chuẩn bị và giao đi"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/content4"
+            android:layout_below="@+id/content3"
+            android:text="sẽ được hiển thị ở đây để bạn theo dõi!"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</FrameLayout>

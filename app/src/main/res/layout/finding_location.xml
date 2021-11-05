@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/Acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/header_location"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/my_acc_1"
+            android:backgroundTint="@color/orange_milk"
+            android:drawableLeft="@drawable/location_go_back"
+            android:drawablePadding="-60dp"
+            android:drawableTint="@color/white"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:text="Chọn tỉnh thành"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/finding_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_location"
+            android:background="@drawable/login_4"
+            android:paddingVertical="10dp"
+            android:paddingStart="20dp"
+            android:layout_marginTop="-22.5dp"
+            android:drawableLeft="@drawable/location_search_location"
+            android:hint="Tìm tỉnh thành"
+            android:gravity="left"
+            android:textSize="20dp"
+            android:textColorHint="@color/light_gray"
+            android:drawablePadding="10dp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_above="@+id/navigation_bar"
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Acc">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/location_stroke_footer"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:layout_marginTop="4dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TP. Hồ Chí Minh"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100 địa điểm"
+                    android:textSize="18dp"
+                    android:fontFamily="sans-serif-light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/location_stroke_footer"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:layout_marginTop="4dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hà Nội"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100 địa điểm"
+                    android:textSize="18dp"
+                    android:fontFamily="sans-serif-light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/location_stroke_footer"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:layout_marginTop="4dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Đà Nẵng"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100 địa điểm"
+                    android:textSize="18dp"
+                    android:fontFamily="sans-serif-light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/location_stroke_footer"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:layout_marginTop="4dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thừa Thiên Huế"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100 địa điểm"
+                    android:textSize="18dp"
+                    android:fontFamily="sans-serif-light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/location_stroke_footer"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:layout_marginTop="4dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quảng Nam"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100 địa điểm"
+                    android:textSize="18dp"
+                    android:fontFamily="sans-serif-light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/location_stroke_footer"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:layout_marginTop="4dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hải Phòng"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100 địa điểm"
+                    android:textSize="18dp"
+                    android:fontFamily="sans-serif-light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/location_stroke_footer"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:layout_marginTop="4dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quảng Ngãi"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100 địa điểm"
+                    android:textSize="18dp"
+                    android:fontFamily="sans-serif-light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/location_stroke_footer"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:layout_marginTop="4dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quảng Trị"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100 địa điểm"
+                    android:textSize="18dp"
+                    android:fontFamily="sans-serif-light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/location_stroke_footer"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:layout_marginTop="4dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bình Định"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100 địa điểm"
+                    android:textSize="18dp"
+                    android:fontFamily="sans-serif-light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/location_stroke_footer"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:layout_marginTop="4dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gia Lai"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100 địa điểm"
+                    android:textSize="18dp"
+                    android:fontFamily="sans-serif-light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/location_stroke_footer"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:layout_marginTop="4dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Đăk Lăk"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100 địa điểm"
+                    android:textSize="18dp"
+                    android:fontFamily="sans-serif-light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/location_stroke_footer"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:layout_marginTop="4dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quảng Bình"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100 địa điểm"
+                    android:textSize="18dp"
+                    android:fontFamily="sans-serif-light" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/navigation_bar_demo">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/navigation_bar_list"
+            android:paddingVertical="7.5dp"
+            android:paddingHorizontal="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/navigation_bar_house_user"
+            android:paddingVertical="7.5dp"
+            android:paddingHorizontal="30dp"
+            android:layout_centerHorizontal="true"
+            android:drawableTint="@color/orange_milk"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/navigation_bar_user"
+            android:layout_alignParentRight="true"
+            android:paddingVertical="7.5dp"
+            android:paddingHorizontal="30dp" />
+    </RelativeLayout>
+</RelativeLayout>
