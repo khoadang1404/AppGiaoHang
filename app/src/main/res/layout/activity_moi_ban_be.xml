@@ -6,21 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".moi_ban_be">
 
-    <TextView
+    <RelativeLayout
         android:id="@+id/header_acc"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="@drawable/my_acc_1"
-        android:backgroundTint="@color/orange_milk"
-        android:drawableLeft="@drawable/location_go_back"
-        android:drawablePadding="-60dp"
-        android:drawableTint="@color/white"
-        android:gravity="center"
-        android:paddingStart="20dp"
-        android:text="Mời bạn bè"
-        android:textColor="@color/white"
-        android:textSize="30dp"
-        android:textStyle="bold" />
+        android:layout_height="wrap_content"
+        android:background="@color/orange_milk">
+        <ImageButton
+            android:id="@+id/image_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/location_go_back"
+            android:background="@color/orange_milk"
+            app:tint="@color/white"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/my_acc_1"
+            android:drawablePadding="-60dp"
+            android:drawableTint="@color/white"
+            android:gravity="center"
+            android:text="Mời bạn bè"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
 
 
     <ScrollView
@@ -126,5 +141,56 @@
         </LinearLayout>
 
     </ScrollView>
+    <RelativeLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/navigation_bar_demo">
+
+        <ImageButton
+            android:id="@+id/list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="7.5dp"
+            android:layout_marginTop="7.5dp"
+            android:layout_marginEnd="7.5dp"
+            android:layout_marginBottom="7.5dp"
+            android:adjustViewBounds="true"
+            android:background="#FFFFFF"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="7.5dp"
+            android:src="@drawable/navigation_bar_list" />
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="7.5dp"
+            android:layout_marginTop="7.5dp"
+            android:layout_marginEnd="7.5dp"
+            android:layout_marginBottom="7.5dp"
+            android:adjustViewBounds="true"
+            android:background="#FFFFFF"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="7.5dp"
+            android:src="@drawable/navigation_bar_house_user"
+            />
+
+        <ImageButton
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#FFFFFF"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="7.5dp"
+            android:src="@drawable/navigation_bar_user"
+            android:adjustViewBounds="true"
+            android:layout_margin="7.5dp"
+            app:tint="@color/orange_milk" />
+    </RelativeLayout>
 
 </RelativeLayout>

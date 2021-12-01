@@ -11,31 +11,46 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/navigation_bar">
 
-        <TextView
+        <RelativeLayout
             android:id="@+id/header_location"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="@drawable/my_acc_1"
-            android:backgroundTint="@color/orange_milk"
-            android:drawableLeft="@drawable/location_go_back"
-            android:drawablePadding="-60dp"
-            android:drawableTint="@color/white"
-            android:gravity="center"
-            android:paddingStart="20dp"
-            android:text="Lịch sử"
-            android:textColor="@color/white"
-            android:textSize="30dp"
-            android:textStyle="bold" />
+            android:layout_height="wrap_content"
+            android:background="@color/orange_milk">
+            <ImageButton
+                android:id="@+id/image_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/location_go_back"
+                android:background="@color/orange_milk"
+                app:tint="@color/white"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/my_acc_1"
+                android:drawablePadding="-60dp"
+                android:drawableTint="@color/white"
+                android:gravity="center"
+                android:text="Lịch sử"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:tabIndicatorColor="#FF7000"
+            android:layout_below="@+id/header_location"
             android:background="@color/white"
+            app:tabIndicatorColor="#FF7000"
             app:tabTextColor="#FF7000"
-            tools:ignore="SpeakableTextPresentCheck"
-            android:layout_below="@+id/header_location" />
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/view_pager2"

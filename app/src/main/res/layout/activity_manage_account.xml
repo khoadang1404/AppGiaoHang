@@ -10,17 +10,36 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
+        <RelativeLayout
             android:id="@+id/header_acc"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@drawable/my_acc_1"
-            android:backgroundTint="@color/orange_milk"
-            android:gravity="center"
-            android:text="Tài khoản"
-            android:textColor="@color/white"
-            android:textSize="30dp"
-            android:textStyle="bold" />
+            android:layout_height="wrap_content"
+            android:background="@color/orange_milk">
+            <ImageButton
+                android:id="@+id/image_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/location_go_back"
+                android:background="@color/orange_milk"
+                app:tint="@color/white"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/my_acc_1"
+                android:drawablePadding="-60dp"
+                android:drawableTint="@color/white"
+                android:gravity="center"
+                android:text="Tài khoản"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
 
         <TextView
             android:id="@+id/header_acc_1"
@@ -276,28 +295,27 @@
                 android:id="@+id/home"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/navigation_bar_house_user"
-                android:background="#FFFFFF"
                 android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="7.5dp"
+                android:adjustViewBounds="true"
+                android:background="#FFFFFF"
                 android:paddingHorizontal="30dp"
                 android:paddingVertical="7.5dp"
-                android:layout_centerVertical="true"
-                android:adjustViewBounds="true"
-                android:layout_margin="7.5dp"
-                />
+                android:src="@drawable/navigation_bar_house_user" />
 
             <ImageButton
                 android:id="@+id/account"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
+                android:layout_margin="7.5dp"
+                android:adjustViewBounds="true"
                 android:background="#FFFFFF"
                 android:paddingHorizontal="30dp"
                 android:paddingVertical="7.5dp"
                 android:src="@drawable/navigation_bar_user"
-                app:tint="@color/orange_milk"
-                android:adjustViewBounds="true"
-                android:layout_margin="7.5dp"/>
+                app:tint="@color/orange_milk" />
         </RelativeLayout>
     </RelativeLayout>
 

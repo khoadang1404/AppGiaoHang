@@ -19,6 +19,7 @@ public class history_layout extends AppCompatActivity {
     history_FragmentAdapter adapter;
     ImageButton home;
     ImageButton account;
+    ImageButton image_btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +27,14 @@ public class history_layout extends AppCompatActivity {
 
         home = (ImageButton) findViewById(R.id.home);
         account = (ImageButton) findViewById(R.id.account);
+        image_btn = (ImageButton) findViewById(R.id.image_btn);
+        image_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(history_layout.this, home_form.class);
+                startActivity(intent);
+            }
+        });
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
