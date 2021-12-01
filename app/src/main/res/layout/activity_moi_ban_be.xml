@@ -1,9 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".moi_ban_be">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/header_acc"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/my_acc_1"
+        android:backgroundTint="@color/orange_milk"
+        android:drawableLeft="@drawable/location_go_back"
+        android:drawablePadding="-60dp"
+        android:drawableTint="@color/white"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:text="Mời bạn bè"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_acc">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/body_money_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_acc_1"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/my_acc_1"
+                android:drawableLeft="@drawable/moi_ban_be_1"
+                android:drawableRight="@drawable/my_acc_grater_than_black"
+                android:drawablePadding="20dp"
+                android:fontFamily="sans-serif-light"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:text="Chia sẻ qua Email"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/body_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/body_money_check"
+                android:layout_marginTop="-1dp"
+                android:background="@drawable/my_acc_1"
+                android:drawableLeft="@drawable/moi_ban_be_2"
+                android:drawableRight="@drawable/my_acc_grater_than_black"
+                android:drawablePadding="20dp"
+                android:fontFamily="sans-serif-light"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:text="Chia sẻ qua Facebook"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/body_bill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/body_history"
+                android:layout_marginTop="-1dp"
+                android:background="@drawable/my_acc_1"
+                android:drawableLeft="@drawable/moi_ban_be_3"
+                android:drawableRight="@drawable/my_acc_grater_than_black"
+                android:drawablePadding="20dp"
+                android:fontFamily="sans-serif-light"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:text="Chia sẻ qua Messenger"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/body_bounty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/body_bill"
+                android:layout_marginTop="-1dp"
+                android:background="@drawable/my_acc_1"
+                android:drawableLeft="@drawable/moi_ban_be_4"
+                android:drawableRight="@drawable/my_acc_grater_than_black"
+                android:drawablePadding="20dp"
+                android:fontFamily="sans-serif-light"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:text="Chia sẻ qua Viber"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/body_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/body_bounty"
+                android:layout_marginTop="-1dp"
+                android:background="@drawable/my_acc_1"
+                android:drawableLeft="@drawable/moi_ban_be_5"
+                android:drawableRight="@drawable/my_acc_grater_than_black"
+                android:drawablePadding="20dp"
+                android:fontFamily="sans-serif-light"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:text="Sao chép đường dẫn tải App"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

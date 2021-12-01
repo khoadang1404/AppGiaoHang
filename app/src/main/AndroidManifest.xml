@@ -10,13 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.View_AppGiaoHang">
         <activity
+            android:name=".moi_ban_be"
+            android:exported="true" />
+        <activity
+            android:name=".thanh_toan"
+            android:exported="true" />
+        <activity
             android:name=".manage_account"
-            android:exported="true" >
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
+            android:exported="true">
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".home_form"
@@ -29,13 +37,14 @@
         </activity>
         <activity
             android:name=".waiting_form"
-            android:exported="true" >
-<!--             <intent-filter>-->
-<!--             <action android:name="android.intent.action.MAIN" />-->
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
 
 
-<!--             <category android:name="android.intent.category.LAUNCHER" />-->
-<!--             </intent-filter> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".history_layout"
