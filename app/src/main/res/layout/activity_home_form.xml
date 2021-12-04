@@ -10,7 +10,7 @@
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="90dp"
-        android:background="@drawable/login_2" >
+        android:background="@drawable/login_2">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -42,173 +42,29 @@
     </RelativeLayout>
 
     <ScrollView
-        android:layout_below="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header">
 
-        <RelativeLayout
-            android:id="@+id/more_care"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="255dp"
-            android:layout_below="@+id/header"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/home_1">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
 
-            <TextView
-                android:id="@+id/care"
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/view_pager_2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Quan tâm nhiều"
-                android:textColor="@color/red_4"
-                android:textSize="25dp"
-                android:layout_marginTop="10dp"
-                android:textStyle="bold"/>
-
-            <LinearLayout
+                android:layout_height="150dp"/>
+            
+            <me.relex.circleindicator.CircleIndicator3
+                android:id="@+id/circle_indicator_3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="55dp"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                app:ci_drawable="@drawable/home_form_color_indicator"/>
 
-                <ImageButton
-                    android:id="@+id/beer"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/home_beer" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="Bia"
-                    android:textColor="@color/black"
-                    android:textSize="18dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="55dp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:id="@+id/boba"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:background="@drawable/home_boba" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="Trà sữa"
-                    android:textColor="@color/black"
-                    android:textSize="18dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="55dp"
-                android:layout_marginRight="30dp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:id="@+id/food"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/home_food" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="Ăn vặt"
-                    android:textColor="@color/black"
-                    android:textSize="18dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="17dp"
-                android:layout_marginTop="160dp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:id="@+id/pet"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/home_pet" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="Thú cưng"
-                    android:textColor="@color/black"
-                    android:textSize="18dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="160dp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:id="@+id/medicine"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:background="@drawable/home_medicines" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="Thuốc"
-                    android:textColor="@color/black"
-                    android:textSize="18dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="160dp"
-                android:layout_marginRight="30dp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:id="@+id/flower"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/home_flowers" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:gravity="center"
-                    android:text="Hoa"
-                    android:textColor="@color/black"
-                    android:textSize="18dp" />
-            </LinearLayout>
-
-        </RelativeLayout>
+        </LinearLayout>
 
 
     </ScrollView>

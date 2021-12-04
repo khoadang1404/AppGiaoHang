@@ -7,6 +7,7 @@
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/drawable/finding_location_stroke_footer.xml" value="0.2703125" />
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/drawable/history_history.xml" value="0.2703125" />
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/drawable/home_1.xml" value="0.2703125" />
+        <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/drawable/home_form_color_indicator.xml" value="0.2703125" />
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/drawable/home_place.xml" value="0.2703125" />
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/drawable/home_search.xml" value="0.2703125" />
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.2703125" />
@@ -43,7 +44,7 @@
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/drawable/navigation_bar_house_user.xml" value="0.2703125" />
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/drawable/navigation_bar_list.xml" value="0.2703125" />
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/drawable/navigation_bar_user.xml" value="0.2703125" />
-        <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/layout/activity_home_form.xml" value="0.264" />
+        <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/layout/activity_home_form.xml" value="0.176" />
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/layout/activity_manage_account.xml" value="0.264" />
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/layout/activity_moi_ban_be.xml" value="0.264" />
@@ -57,6 +58,7 @@
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/layout/fragment_history.xml" value="0.176" />
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/layout/fragment_history__draft.xml" value="0.176" />
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/layout/fragment_history__history.xml" value="0.1766304347826087" />
+        <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/layout/fragment_photo.xml" value="0.12360688956433637" />
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/layout/history_1.xml" value="0.264" />
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/layout/history_layout.xml" value="0.264" />
         <entry key="..\:/BT_LTDD/View_AppGiaoHang/app/src/main/res/layout/layout_text.xml" value="0.4" />
